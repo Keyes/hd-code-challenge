@@ -1,0 +1,7 @@
+@include vgrid($grid);
+
+@mixin mq($a, $b: null) {
+  @include vgrid-mq(($a), $b) {
+    @content;
+  }
+}

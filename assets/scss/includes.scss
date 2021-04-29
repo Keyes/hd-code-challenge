@@ -1,0 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
+@import '../../node_modules/@juliankern/vgrid/src/scss/grid.scss';
+
+@include vgrid-prepare($grid);

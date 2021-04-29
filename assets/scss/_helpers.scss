@@ -1,0 +1,47 @@
+.hd-h {
+  @each $distance in (1, 2, 3, 4, 5) {
+    &--mt#{$distance} {
+      margin-top: #{$distance}rem;
+    }
+    &--mb#{$distance} {
+      margin-bottom: #{$distance}rem;
+    }
+    &--ml#{$distance} {
+      margin-left: #{$distance}rem;
+    }
+    &--mr#{$distance} {
+      margin-right: #{$distance}rem;
+    }
+
+    &--mh#{$distance} {
+      margin-left: #{$distance}rem;
+      margin-right: #{$distance}rem;
+    }
+    &--mv#{$distance} {
+      margin-top: #{$distance}rem;
+      margin-bottom: #{$distance}rem;
+    }
+
+    &--pt#{$distance} {
+      padding-top: #{$distance}rem;
+    }
+    &--pb#{$distance} {
+      padding-bottom: #{$distance}rem;
+    }
+    &--pl#{$distance} {
+      padding-left: #{$distance}rem;
+    }
+    &--pr#{$distance} {
+      padding-right: #{$distance}rem;
+    }
+
+    &--ph#{$distance} {
+      padding-left: #{$distance}rem;
+      padding-right: #{$distance}rem;
+    }
+    &--pv#{$distance} {
+      padding-top: #{$distance}rem;
+      padding-bottom: #{$distance}rem;
+    }
+  }
+}

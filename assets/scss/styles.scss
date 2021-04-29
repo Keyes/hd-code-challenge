@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'reset';
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family-standard;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // stylelint-disable-next-line property-no-unknown
+  font-smooth: always;
+  color: $color-gray-7;
+}
+
+@import 'helpers';
+@import 'typography';
+@import 'grid';
+@import 'shadows';
+
+@import 'card';
+@import 'spinner';
+@import 'steps';

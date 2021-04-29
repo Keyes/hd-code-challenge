@@ -1,0 +1,112 @@
+// COLORS
+
+$color-gray-8: #2c4270;
+$color-gray-7: #4b5466;
+$color-gray-6: #6e7891;
+$color-gray-5: #a0acbd;
+$color-gray-4: #d6dde7;
+$color-gray-3: #eff2f6;
+$color-gray-2: #e2e7ee;
+$color-gray-1: #fcfcfc;
+$color-white: #fff;
+
+$color-primary-light: #dbfbff;
+$color-primary: rgb(91, 164, 255);
+$color-primary-dark: rgb(28, 53, 83);
+
+$color-secondary-light: #dce9f2;
+$color-secondary: #5b8cb2;
+$color-secondary-dark: #224159;
+
+// Used for error states.
+$color-error-light: #ffc4ab;
+$color-error: #fdac8b;
+$color-error-dark: #892f2f;
+
+// #############################
+// FONTS
+
+$font-family-standard: 'Source Sans Pro', sans-serif;
+
+// #############################
+// SHAPES
+
+$border-radius: 1rem;
+$border-radius-large: 1.5rem;
+$border-radius-xlarge: 2rem;
+
+// ############################
+// GRID
+
+/* stylelint-disable value-keyword-case */
+
+$grid: (
+  config: (
+    naming: (
+      prefix: 'hd-g--',
+      container: 'container',
+      row: 'row',
+      col: 'col',
+      offset: 'offset',
+      vpadding: 'vpadding',
+      hide: 'hide',
+      show: 'show',
+      only: 'only',
+      up: 'up',
+      retina: 'retina',
+      no-retina: 'no-retina',
+      landscape: 'landscape',
+      portrait: 'portrait',
+      touch: 'touch',
+      no-touch: 'no-touch',
+      separator: '-',
+    ),
+    features: classes visibility retina orientation touch offset,
+    mode: flex,
+  ),
+  breakpoints: (
+    xs: (
+      max: 467px,
+      content: 100%,
+      padding: 10px,
+      gutter: 6px,
+      columnCount: 12,
+    ),
+    sm: (
+      min: 468px,
+      max: 1023px,
+      content: 468px,
+      padding: 20px,
+      gutter: 12px,
+      columnCount: 12,
+    ),
+    md: (
+      min: 1024px,
+      max: 1439px,
+      content: 1024px,
+      padding: 25px,
+      gutter: 16px,
+      columnCount: 12,
+    ),
+    lg: (
+      min: 1440px,
+      content: 1440px,
+      padding: 35px,
+      gutter: 24px,
+      columnCount: 12,
+    ),
+    mobile: (
+      virtual: true,
+      max: 1023px,
+    ),
+    tablet: (
+      virtual: true,
+      min: 1024px,
+      max: 1279px,
+    ),
+    desktop: (
+      virtual: true,
+      min: 1280px,
+    ),
+  ),
+);

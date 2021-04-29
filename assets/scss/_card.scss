@@ -1,0 +1,12 @@
+.hd-ui--card {
+  border-radius: $border-radius;
+
+  &,
+  &-large {
+    background-color: $color-gray-1;
+  }
+
+  &-large {
+    border-radius: $border-radius-large;
+  }
+}

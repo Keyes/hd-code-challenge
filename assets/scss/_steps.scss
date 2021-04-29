@@ -1,0 +1,36 @@
+.hd-l--step {
+  transform: translate3d(0, 0, 0);
+
+  &.card-swipe-enter-active,
+  &.card-swipe-reverse-enter-active {
+    transition: all 150ms ease-out;
+  }
+
+  &.card-swipe-leave-active,
+  &.card-swipe-reverse-leave-active {
+    transition: all 150ms ease-in;
+  }
+
+  &.card-swipe-enter,
+  &.card-swipe-reverse-enter,
+  &.card-swipe-leave-to,
+  &.card-swipe-reverse-leave-to {
+    opacity: 0;
+  }
+
+  &.card-swipe-enter {
+    transform: translate3d(6%, 0, 0);
+  }
+
+  &.card-swipe-leave-to {
+    transform: translate3d(-6%, 0, 0);
+  }
+
+  &.card-swipe-reverse-enter {
+    transform: translate3d(-6%, 0, 0);
+  }
+
+  &.card-swipe-reverse-leave-to {
+    transform: translate3d(6%, 0, 0);
+  }
+}

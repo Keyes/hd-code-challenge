@@ -1,0 +1,15 @@
+.hd-ui--link {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color 200ms;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary-dark;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
